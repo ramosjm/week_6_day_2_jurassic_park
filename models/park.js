@@ -11,7 +11,12 @@ Park.prototype.mostVisitors = function(){
 };
 
 Park.prototype.findSpecies = function(species){
-  result = this.dinosaurs.species.filter(species);
+  function typeOfSpecies(species) {
+    if(this.dinosaurs.species === species){
+      return true;
+    }
+  }
+  result = this.dinosaurs.filter(typeOfSpecies);
   console.log(result);
   return result;
 };
