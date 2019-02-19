@@ -10,15 +10,15 @@ Park.prototype.mostVisitors = function(){
   return this.dinosaurs[0];
 };
 
-Park.prototype.findSpecies = function(species){
-  function typeOfSpecies(species) {
-    if(this.dinosaurs.species === species){
-      return true;
-    }
-  }
-  result = this.dinosaurs.filter(typeOfSpecies);
-  console.log(result);
-  return result;
-};
-
-module.exports = Park;
+// Park.prototype.findSpecies = function(species){
+//   function typeOfSpecies(species) {
+//     if(this.dinosaurs.species === species){
+//       return true;
+//     }
+//   }
+//   result = this.dinosaurs.filter(typeOfSpecies);
+//   console.log(result);
+//   return result;
+// };
+//
+// module.exports = Park;
