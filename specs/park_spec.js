@@ -56,7 +56,7 @@ describe('Park', function() {
     assert.strictEqual(actual,expected);
   });
 
-  xit('should be able to find all dinosaurs of a particular species',function(){
+  it('should be able to find all dinosaurs of a particular species',function(){
     const actual = bigPark.findSpecies('Elf');
     const expected =[dinosaur1,dinosaur2,dinosaur3];
     assert.deepStrictEqual(actual,expected);
