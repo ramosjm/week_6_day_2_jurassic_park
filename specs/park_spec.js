@@ -45,7 +45,7 @@ describe('Park', function() {
     park.dinosaurs.push(dinosaur);
     park.dinosaurs.push(dinosaur1);
     park.dinosaurs.push(dinosaur2);
-    park.dinosaurs.pop();
+    park.removeDinosaur(dinosaur1);
     const actual = park.dinosaurs.length;
     assert.strictEqual(actual,2);
   });
