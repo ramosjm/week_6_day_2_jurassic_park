@@ -4,6 +4,11 @@ const Park = function (name, ticketPrice, dinosaurs = []) {
   this.dinosaurs = dinosaurs;
 };
 
+Park.prototype.addDinosaur = function(dinosaur){
+  this.dinosaurs.push(dinosaur);
+};
+
+
 
 Park.prototype.mostVisitors = function(){
   this.dinosaurs.sort(function(a, b){return b.guestsAttractedPerDay - a.guestsAttractedPerDay});
@@ -21,4 +26,4 @@ Park.prototype.mostVisitors = function(){
 //   return result;
 // };
 //
-// module.exports = Park;
+module.exports = Park;

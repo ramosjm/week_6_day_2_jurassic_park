@@ -17,7 +17,7 @@ describe('Park', function() {
     dinosaur3 = new Dinosaur('Elf','Meat',20);
     dinosaur4 = new Dinosaur('Goblin','Everything',30);
     dinosaurGroup = [dinosaur,dinosaur1,dinosaur2,dinosaur3,dinosaur4];
-    bigPark = new Park ('Collossus',10,dinosaurGroup);
+    bigPark = new Park('Collossus',10,dinosaurGroup);
   });
 
   it('should have a name',function(){
@@ -36,7 +36,7 @@ describe('Park', function() {
   });
 
   it('should be able to add a dinosaur to its collection',function(){
-    park.dinosaurs.push(dinosaur);
+    park.addDinosaur(dinosaur1);
     const actual = park.dinosaurs.length;
     assert.strictEqual(actual,1);
   });
